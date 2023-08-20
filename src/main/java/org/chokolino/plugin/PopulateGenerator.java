@@ -10,5 +10,4 @@ public class PopulateGenerator extends AnAction {
         GeneratorWorker.getInstance().generate(e, false, true);
     }
 
-
 }

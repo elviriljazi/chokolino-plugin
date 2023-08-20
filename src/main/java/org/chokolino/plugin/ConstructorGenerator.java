@@ -9,4 +9,5 @@ public class ConstructorGenerator extends AnAction {
     public void actionPerformed(@NotNull AnActionEvent e) {
         GeneratorWorker.getInstance().generate(e, true, false);
     }
+
 }
