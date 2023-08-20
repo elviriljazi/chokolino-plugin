@@ -36,12 +36,12 @@ To install the **Chokolino**, follow these steps:
 2. Open IntelliJ IDEA.
 3. Go to the **Plugins** section in the settings.
 4. CLick ⚙ ><i>  Install Plugin from Disk</i>.
-5. Select release-v1.0.zip from Files.
+5. Select `Chokolino-1.0.zip` from Files.
 6. Restart IntelliJ IDEA to activate the plugin.
 
 ## Configuration
 
-The plugin does not require any additional configuration. Once installed, you can access the **Generate ResultSet Constructor** and **Generate PopulatePs Method** features through the Code > Generate... and keyboard shortcuts.
+The plugin does not require any additional configuration. Once installed, you can access the **Generate ResultSet Constructor** and **Generate PopulatePs Method** features through the <i>Code > Generate...</i> and keyboard shortcuts.
 
 ## Support and Feedback
 
