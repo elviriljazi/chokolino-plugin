@@ -1,4 +1,4 @@
-package org.intellij.sdk.action;
+package org.chokolino.plugin;
 
 import com.intellij.psi.PsiAnnotation;
 import com.intellij.psi.PsiAnnotationMemberValue;

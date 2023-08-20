@@ -1,4 +1,4 @@
-package org.intellij.sdk.action;
+package org.chokolino.plugin;
 
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;

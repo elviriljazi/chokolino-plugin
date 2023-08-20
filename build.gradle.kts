@@ -5,8 +5,8 @@ plugins {
     id("org.jetbrains.intellij") version "1.15.0"
 }
 
-group = "org.intellij.sdk"
-version = "2.0.0"
+group = "org.chokolino.plugin"
+version = "1.0.0"
 
 repositories {
     mavenCentral()

@@ -47,15 +47,15 @@
           element and see how the menu text changes.) The alternate text and description attributes do not
           appear here because they are defined by action-id in the resource-bundle.
         -->
-        <action id="org.intellij.sdk.action.ConstructorGenerator"
-                class="org.intellij.sdk.action.ConstructorGenerator"
+        <action id="org.chokolino.plugin.ConstructorGenerator"
+                class="org.chokolino.plugin.ConstructorGenerator"
                 text="ResultSet Constructor" description="ResultSet constructor generator">
             <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="GenerateGroup"/>
             <keyboard-shortcut first-keystroke="alt C" keymap="$default"/>
         </action>
 
-        <action id="org.intellij.sdk.action.PopulateGenerator"
-                class="org.intellij.sdk.action.PopulateGenerator"
+        <action id="org.chokolino.plugin.PopulateGenerator"
+                class="org.chokolino.plugin.PopulateGenerator"
                 text="PopulatePs Method" description="PopulatePs method generator">
             <add-to-group group-id="GenerateGroup" anchor="after" relative-to-action="GenerateGroup"/>
             <keyboard-shortcut first-keystroke="alt P" keymap="$default"/>
