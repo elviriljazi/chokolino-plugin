@@ -2,7 +2,7 @@
 
     <id>org.chokolino.plugin</id>
 
-    <name>Chokolino Plugin</name>
+    <name>Chokolino</name>
 
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.java</depends>

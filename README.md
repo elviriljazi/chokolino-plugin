@@ -32,10 +32,12 @@ Additionally, the plugin allows you to easily generate populate method within yo
 
 To install the **Chokolino**, follow these steps:
 
-1. Open IntelliJ IDEA.
-2. Go to the **Plugins** section in the settings.
-3. Search for "Chokolino" and click **Install**.
-4. Restart IntelliJ IDEA to activate the plugin.
+1. Download zip file from releases (latest)
+2. Open IntelliJ IDEA.
+3. Go to the **Plugins** section in the settings.
+4. CLick ⚙ ><i>  Install Plugin from Disk</i>.
+5. Select release-v1.0.zip from Files.
+6. Restart IntelliJ IDEA to activate the plugin.
 
 ## Configuration
 
@@ -43,7 +45,7 @@ The plugin does not require any additional configuration. Once installed, you ca
 
 ## Support and Feedback
 
-If you encounter any issues or have suggestions for improvements, please don't hesitate to contact our support team at support@example.com.
+If you encounter any issues or have suggestions for improvements, please don't hesitate to contact me at dev@elviriljazi.xyz.
 
 ---
 
