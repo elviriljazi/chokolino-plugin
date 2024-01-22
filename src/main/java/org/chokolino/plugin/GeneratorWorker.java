@@ -5,7 +5,18 @@ import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.command.WriteCommandAction;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
-import com.intellij.psi.*;
+import com.intellij.psi.JavaPsiFacade;
+import com.intellij.psi.PsiClass;
+import com.intellij.psi.PsiCodeBlock;
+import com.intellij.psi.PsiElementFactory;
+import com.intellij.psi.PsiField;
+import com.intellij.psi.PsiJavaCodeReferenceElement;
+import com.intellij.psi.PsiJavaFile;
+import com.intellij.psi.PsiMethod;
+import com.intellij.psi.PsiParameter;
+import com.intellij.psi.PsiStatement;
+import com.intellij.psi.PsiType;
+import com.intellij.psi.PsiTypes;
 import com.intellij.psi.codeStyle.CodeStyleManager;
 import com.intellij.webSymbols.utils.NameCaseUtils;
 import org.jetbrains.java.generate.psi.PsiAdapter;
@@ -52,7 +63,7 @@ public class GeneratorWorker {
                 PsiAdapter.addImportStatement(file, "java.sql.*");
                 PsiAdapter.addImportStatement(file, "java.util.*");
             } catch (Exception e) {
-                e.printStackTrace();
+                e.fillInStackTrace();
             }
         });
     }
@@ -92,7 +103,8 @@ public class GeneratorWorker {
 
     private PsiMethod createPopulatePs(List<FieldDetail> fields, Project project) {
         PsiElementFactory elementFactory = JavaPsiFacade.getElementFactory(project);
-        PsiMethod populatePs = elementFactory.createMethod("populatePs", PsiType.VOID);
+
+        PsiMethod populatePs = elementFactory.createMethod("populatePs", PsiTypes.voidType());
 
         PsiType resultSetType = elementFactory.createTypeByFQClassName("NamedParameterStatement");
         PsiParameter resultSetParam = elementFactory.createParameter("ps", resultSetType, populatePs);

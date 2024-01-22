@@ -2,11 +2,11 @@
 
 plugins {
     id("java")
-    id("org.jetbrains.intellij") version "1.15.0"
+    id("org.jetbrains.intellij") version "1.17.0"
 }
 
 group = "org.chokolino.plugin"
-version = "1.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
@@ -18,7 +18,8 @@ java {
 
 // See https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
-    version.set("2022.3.3")
+    pluginName.set("Chokolino")
+    version.set("2023.3.2")
     plugins.set(listOf("com.intellij.java"))
 }
 
@@ -30,6 +31,5 @@ tasks {
     patchPluginXml {
         version.set("${project.version}")
         sinceBuild.set("223")
-        untilBuild.set("232.*")
     }
 }
